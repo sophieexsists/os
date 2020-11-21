@@ -1,0 +1,31 @@
+head>
+</head>
+<body>
+    <p id="story">You are sitting at a kitchen table. There are some pancakes in front of you.</p>
+    <button id="1" class="button1" onclick="choose(this)">Eat the pancakes</button>
+    <button id="2" class="button2" onclick="choose(this)">Look around the kitchen</button>
+ 
+    <script>
+        // JSON - Javascript Object Notation
+        // Key - Value
+        var data = {
+            1: ["You cut the pancakes and eat them. They are delicious. You feel a little dizzy.", "Leave the kitchen", 3, "Take a nap", 4],
+            2:["You see someone sleeping on the floor", "Wake him up.", 5, "Leave the kitchen", 6],"
+            3:["You try to go away but you are too tired so you sit back down", "Sleep", 7, "Do nothing", 8],
+            4:["They quickly wake up", "Say hi", 9, "Scream", 10],
+        }
+ 
+        function choose(elem){
+            var choice = elem.id;
+            var arrayOfInfo = data[choice];
+            document.getElementById("story").innerHTML = arrayOfInfo[0];
+            var button1 = document.getElementsByClassName("button1")[0];
+            var button2 = document.getElementsByClassName("button2")[0];
+            button1.innerHTML = arrayOfInfo[1];
+            button1.id = arrayOfInfo[2];
+            button2.innerHTML = arrayOfInfo[3];
+            button2.id = arrayOfInfo[4];
+        }
+ 
+    </script>
+</body>
