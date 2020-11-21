@@ -1,0 +1,50 @@
+#hero{
+           background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ5e3gfvJh_WozTj6_D-iy_9nAb5DMmyOjg9g&usqp=CAU");
+           width: 1000px;
+           height: 700px;
+           background-size: cover;
+           color: black;
+           text-align: center;
+           
+       }
+       #hero-text{
+           vertical-align: middle;
+           font-size: 80px;
+           display: inline-block;
+           padding-top: 80px;
+       }
+       .navbar ul{
+           list-style-type: none;
+           margin: 0;
+           padding: 0;
+           overflow: hidden;
+           background-color: darkblue;
+           
+       }
+       .navbar li{
+           float: left;
+       }
+       .navbar li a{
+           display: block;
+           color: white;
+           text-align: center;
+           padding: 14px 16px;
+           text-decoration: none;
+       }
+        .active {
+           background-color: aqua;
+       }
+.food-img{
+    width: 200px;
+    height: 200px; 
+}
+.row{
+    display: flex;
+}
+.item {
+    flex: 1;
+    text-align: center;
+}
+.centered {
+    text-align: center;
+}
